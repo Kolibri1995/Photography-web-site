@@ -102,116 +102,135 @@ textarea {
 }
 body {
     font-size: 62.5%;
-    font-weight: 300;
+    font-weight: 400;
     color: #555;
     font-family: 'Dosis', sans-serif;
 }
+h1, h2, h3, h4 {
+    font-weight: 400;
+    color: #383232;
+
+}
+h1 {
+    font-size: 2.8em;
+    color: #ffffff;
+    margin-left: 0.8em;
+}
 h2 {
-    font-family: 'Dosis', sans-serif;
-    font-size: 2em;
-    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 10px;
+    font-weight: bold;
 }
 h3 {
-    font-weight: 500;
-    font-size: 2.4em;
-    color: #383232;
-    text-transform: uppercase;
-    overflow: hidden;
-}
-h3 span {
-    position: relative;
-}
-h3 span::after {
-    content: '';
-    position: absolute;
-    width: 311px;
-    height: 1px;
-    top: 50%;
-    right: -326px;
-    background-color: #ffffff;
-}
-h5 {
-    font-weight: 700;
-    margin: 0;
-}
-p,h5 {
     font-size: 1.8em;
-    line-height: 30px;
+    color: 383232;
+
+}
+h4 {
+    font size: 1.3em;
+}
+
+p {
+    font-size: 1.2em;
 }
 a {
     text-decoration: none;
 }
 strong {
     font-weight: 700;
+
 }
 hr {
     margin: 40px 0;
 }
-.container {
-    max-width: 1300px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
 section {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
 }
 .btn {
     font-weight: 500;
-    font-size: 1.8em;
-    color: #000;
-    background: #f34949;
-    padding: 6px 27px;
+    font-size: 1.5em;
+    color: #ffffff;
+    background: #000;
+    padding: 10px 30px;
+    display: block;
+    width: 160px;
+    margin-left: 20px !important;
+    }
+    
 }
-.btn-tab {
-    background-color: transparent;
-    border: 2px solid #383232;
+.container {
+    max-width: 1336px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.btn-tab:hover,
-.btn-tab.active {
-    background-color: #383232;
-    color: #fff;
+.redovi {
+    float: left;
+    width: 50%;
 }
-ul {
-    list-style: none;
+
+.container1 {
+    display: inline;
+   max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+ 
+}
+.nav {
+    position: fixed;
+    width: 51%;
+    top: 5px;
+    right: 10px;
+    display:  none;
+
 }
 /* ======== HEADER ========== */
 header {
-    padding: 13px 0 8px;
+    background-color: #fff;
+    position: fixed;
+
+    width: 100%;
+  
+    z-index: 10;
+}
+header .logo img {
+    
+ width: 150px;
+}
+
 }
 nav {
-    display: table;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
     background: #383232;
     text-align: center;
-    color: #000;
+   
 }
 nav ul {
-  
     vertical-align: middle;
 }
 nav a {
-    color: #fff;
-    font-size: 3.6em;
-    line-height: 70px;
+    font-size: 1.8em;
     padding: 5px 10px;
+    color:#625e5e;
 }
 nav .btn {
-    background: #fff;
-    font-size: 3.6em;
+    background: #000;
+    font-size: 1.8em;
+    width: auto;
 }
 nav .close {
     width: 45px;
     height: 45px;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 50px;
     display: block;
     margin: 0;
 }
@@ -227,217 +246,454 @@ nav .close span:nth-child(2) {
     position: relative;
     top: -2px;
 }
-.header-logo {
-    display: inline-block;
-}
-.burger {
-    width: 44px;
-    height: 25px;
-    padding: 5px 0;
-    float: right;
-    margin-top: 12px;
-}
-.burger span {
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    display: block;
-    margin-top: 9px;
-}
-.burger span:nth-child(1) {
-    margin-top: 0;
-}
-/* ======== HEADER END ========== */
 
-/* ======== MENU ========== */
-.menu .head-title {
-    max-width: 551px;
-    margin: 0 auto;
+.nav a{
+   display: inline;
+   float: left;
+     text-align: center;
+
+    padding: 14px 16px !important;
+  text-decoration: none;
 }
-.menu h3 {
+ul .nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menubtn{
     position: relative;
-    color: #383232;
-    padding: 0 15px;
-    overflow: hidden;
+    left: 105px;
 }
-.menu h3 span {
-    display: inline-block;
-    position: relative;
-    padding: 0 20px;
-}
-.menu h3 span:before,
-.menu h3 span:after {
-    content: '';
-    display: block;
-    width: 1000px;
-    position: absolute;
-    top: 0.73em;
-    border-top: 1px solid red;
-}
-.menu h3 span:before {
-    right: 100%;
-}
-.menu h3 span:after {
-    left: 100%;
-}
-.menu h1 {
-    font-size: 2em;
-    color: #383232;
-    font-weight: 400;
-    padding-bottom: 40px;
-    display: inline-block;
-    max-width: 1100px;
-}
-.menu .tabs {
-    padding-bottom: 60px;
-}
-.menu .tabs li {
- text-transform: uppercase;
- display: inline-block;
- margin: 0 5px;
- font-size: 1.4em;
- cursor: pointer;
-}
-.menu .meals ul {
-    display: none;
-    text-align: left;
-}
-.menu .meals ul.active {
-    display: block;
-}
-.menu .meals li {
-    position: relative;
-    margin-bottom: 25px;
-}
-.menu .meals p {
-    font-size: 1.8em;
-    margin: 0;
-    display: inline;
-    font-weight: 500;
-    padding-right: 15px;
-    background: #fff;
-}
-.menu .meals li::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #e3e1e1;
-    bottom: 30px;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-}
-.menu .meals small {
-    display: block;
-    color: #b7b7b7;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-.menu .meals span {
-    position: absolute;
-    right: 0;
-    font-weight: 500;
-    font-size: 2em;
-    background: #fff;
-    bottom: 20px;
-    padding-left: 15px;
+.btn {
+    background-color: #000000;
+
 }
 /* ======== MENU END ========== */
+
+/*============HERO SECTION=======================*/
+
+.services .redovi {
+    width: 100%;
+}
+.services .redovi img {
+    float: left;
+    display: block;
+    width: 30%;
+    margin-top: 30px;
+}
+.services .redovi .content {
+    float: left;
+    width: 70%;
+    padding-left: 10px;
+
+}
+
+.portfolio {
+    background-color: #6b6b6b;
+}
+.portfolio h2 {
+    color: #fff;
+}
+.portfolio li {
+    width: 50%;
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+}
+.portfolio li:nth-child(odd) {
+    padding-right: 5px;
+}
+.portfolio li:nth-child(even) {
+    padding-left: 5px;
+}
+.portfolio li img {
+    display: block;
+    max-width: 100%;
+}
+
+.contact .redovi:last-child {
+    width: 100%;
+    clear: both;
+}
+.contact h4 {
+    margin: 10px 0px;
+}
+.contact ul {
+    list-style: none;
+    margin: 0;
+    
+   
+}
+.contact ul li {
+    display: block;
+  
+    margin: 5px;
+    text-align: center;
+}
+.contact li img {
+    display: block;
+    margin: 3px 10px;
+}
+.contact li a {
+    font-size: 1.2em;
+    color: #555;
+
+}
+
+.contact {
+    background-color: #e6e6e6;
+}
+
+/* ========END HERO SECTION ========== */
+.dolnjilogo {
+   display: block;
+  width: 50px !important;
+  height: 100px !important;
+  text-align: center
+  color:#0000;
+}
+
+.text-center li{
+    text-align: center;
+}
+
+.red {
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.red div{
+    background-color: #e6e6e6;
+}
+
+.red ul {
+    list-style-type: none;
+}
+
+
+.red img{
+
+    max-width: 200px;
+    position: relative;
+   float:left;
+}
+.red2 {
+    display: flex;
+position: relative;
+margin: 0px !important
+ 
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-img {
+    display: flex;
+}
+div .red .red1 {
+    text-decoration: none !important;
+}
+
+.footer {
+  text-align: center;  
+}
+
+.bootom-nav a {
+    font-size: 1.5em;
+   text-decoration: none;
+   color: #6e6e6e !important;
+   padding: 10px 10px;
+    display: inline-block;
+
+    
+}
+
+/* ======== Modal  ========== */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.modal.open {
+    display: block;
+}
+.modal-wrap {
+    margin-top: 50px;
+    max-width: 870px;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow-y: auto;
+}
+.modal-wrap > * {
+    display: inline-block;
+}
+.modal-wrap .close span {
+    background-color: #d6d6d6;
+}
+.modal-wrap h3 {
+    color: #29777c;
+    width: 100%;
+    text-transform: uppercase;
+
+}
+.modal-inner {
+    max-width: 520px;
+    margin: 0 auto;
+}
+legend {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+input {
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+   
+}
+input: placeholder {
+  color: #d6d6d6;
+  font-size: 16px;
+  font-style: italic;
+}
+input: focus {
+    outline: none;
+    border-color: #29777c;
+}
+input.btn {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 13px 15px;
+    color: #ffffff;
+}
+
+.close {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+}
+button {
+    background: transparent;
+    border: none;
+}
+
+ input[type="date"]:before,
+ input[type="time"]:before {
+    content: attr(placeholder) !important;
+    color: #d6d6d6;
+    font-style: italic;
+    margin-right: 0.5em;
+  }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
+   =================    ========================================================= */
+
+
 @media only screen and (min-width: 768px) {
-    section {
-        padding-top: 30px;
-        padding-bottom: 30px;
+   
+  .logo li{
+    width: 150px;
+    max-width: 150px !important;
+  }
+   .menubtn{
+        padding-left: 420px;
     }
-    .menu .meals li {
-        float: left;
-        width: 46%;
-        margin-bottom: 35px;
+    .unstyle-list img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
     }
-    .menu .meals li:nth-child(even) {
-        margin-left: 4%;
+   
+    ul .contact-img {
+
+       position: relative;
+       right: 100px;
+       margin-left: 250px;
+
+
     }
-    .menu .meals li:nth-child(odd) {
-         margin-right: 4%;
+
+    .services .redovi img {
+        margin: 0;
+        padding-right: 10px;
+        padding-left: 10px;
     }
-    .menu .tabs li {
-        padding: 11px 27px;
-        margin: 0 20px;
+    .services .redovi .content {
+        width: 50%;
     }
+   .portfolio li img{
+    width: 30%;
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+    height: 375px;
+    width: 375px;
 }
-@media only screen and (min-width: 1024px) {
-    section {
-        padding-top: 40px;
-        padding-bottom: 40px;
+
+
+.contact h4{
+    margin: 10px 10px;
     }
-    /* ======== HEADER ========== */
-    header {
-        padding: 25px 0 10px;
+
+    h4 {
+        font-size: 1.5em;
+        
     }
-    nav {
+
+    h1 {
         display: block;
-        position: initial;
-        width: auto;
-        height: auto;
-        background: inherit;
-        float: right;
+        font-size: 4em;
+
     }
-    nav li {
-        float: left;
+}
+
+@media only screen and (min-width: 1024px) {
+
+     h2 {
+    font-size: 3.2em;
     }
-    nav a {
-        color: #000;
-        margin-left: 20px;
+h3{
+    font-size: 2.8em;
+}
+h4{
+    font-size: 2em;
+}
+    p { 
+     font-size: 1.5em
+
     }
-    nav a:not(.btn).active,
-    nav a:not(.btn):hover {
-        color: #383232;
-        border-top: 1px solid #383232;
-        border-bottom: 1px solid #383232;
-    }
-    nav a,
-    nav a.btn {
-        font-size: 1.8em;
-    }
-    nav a.btn {
-        color: #fff;
-        background: #383232;
-    }
-    .burger,
-    nav .close {
+    .nav {
+        display: block;
+    } 
+     .menubtn{
         display: none;
+        padding-left: 300px;
     }
-    /* ======== HEADER END ========== */
+header {
+    background-color: #fff;
+    position: fixed;
+    height: 57px;
+    width: 100%;
+    padding: 2.5px 0px 8px;
+    z-index: 10;
+}
 
-
-    /* ======== MENU ========== */
-    .menu h1 {
-        font-size: 2.4em;
+    .services .redovi .content {
+        width: 100%;
+        padding-top: 30px;
     }
-    .menu .meals li {
-        margin-bottom: 50px;
-    }
-    /* ======== MENU END========== */
 
+  
+    .services .redovi img {
+    float: none;
+    display: block;
+    width: 80%;
+    margin-top: 30px;
+    vertical-align: middle;
+}
+.portfolio li img {
+  height: 330px;
+  max-width: 330px;
+}
+.contact-img {
+    padding-left: 250px !important;          
+}
+
+.portfolio li {
+    padding: 0 !important;
+    width: 100%;
+    margin-bottom: 0;
+}
+.content {
+position: relative;
+left: 10px !important;
+ float: middle;
+  width: 30%;
+  padding: 5px;
+       
+}
+.btn {
+    font-size: 2em;
+    color: #fff;
+    background: #000;
+    padding: 10px 30px;
+    display: block;
+    width: 200px;
+
+    }
+
+    .redovi {
+    float: middle !important;
+    width: 33.33% !important;
 }
 
 
+div .content {
+    padding-left: 15px !important;
+   
+}
+    .grid-ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+ 
 
 
+}
 
+@media only screen and (min-width: 1200px) {
+    h1{
+        font-size: 3.5em;
+    }
+
+     p { 
+     font-size: 2em
+
+    }
+.portfolio li img {
+  height: 300px;
+  max-width: 300px;
+}
+.four {
+    grid-template-columns:repeat(4,1fr);
+}
+}
 
 /* ==========================================================================
    Helper classes
+   
    ========================================================================== */
 .unstyle-list {
     margin: 0;
     padding: 0;
+    list-style: none;
+    color:#0000;
 }
 .text-center {
     text-align: center;
@@ -449,7 +705,14 @@ nav .close span:nth-child(2) {
 .hidden {
     display: none !important;
 }
-
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 button {
     background: transparent;
     border: none;
@@ -463,64 +726,6 @@ button {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
 
 /* ==========================================================================
    Print styles.
